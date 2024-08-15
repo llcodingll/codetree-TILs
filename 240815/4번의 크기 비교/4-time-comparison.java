@@ -9,25 +9,9 @@ public class Main {
         int d = sc.nextInt();
         int e = sc.nextInt();
 
-        if(a>b) {
-            System.out.println("1");
-        } else {
-            System.out.println("0");
-        }
-        if(a>c) {
-            System.out.println("1");
-        } else {
-            System.out.println("0");
-        }
-        if(a>d) {
-            System.out.println("1");
-        } else {
-            System.out.println("0");
-        }
-        if(a>e) {
-            System.out.println("1");
-        } else {
-            System.out.println("0");
-        }
+        System.out.println(a > b ? "1" : "0");
+        System.out.println(a > c ? "1" : "0");
+        System.out.println(a > d ? "1" : "0");
+        System.out.println(a > e ? "1" : "0");
     }
 }
