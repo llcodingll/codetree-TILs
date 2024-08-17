@@ -4,20 +4,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        String b = sc.next();
+        char b = sc.next().charAt(0);
         int c = sc.nextInt();
-        String d = sc.next();
+        char d = sc.next().charAt(0);
 
-        if(a>=19&&b=="M" || c>=19&&d=="M"){
+        if((a>=19&&b=='M') || (c>=19&&d=='M')){
             System.out.print(1);
-        } else if(a>=19&&b=="W" || c>=19&&d=="W"){
-            System.out.print(0);
-        } else if(a<=19&&b=="M" || c<=19&&d=="M"){
-            System.out.print(0);
-        } else if(a<=19&&b=="W" || c<=19&&d=="W"){
-            System.out.print(0);
         } else {
-            System.out.print(1);
+            System.out.print(0);
         }
     }
 }
